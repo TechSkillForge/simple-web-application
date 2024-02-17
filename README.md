@@ -11,3 +11,4 @@ Developers often face challenges when it comes to ensuring that applications run
 The following language-specific starting points are available:
 
 - [Golang](./golang/README.md)
+- [JavaScript](./javascript/README.md)

@@ -1,1 +1,7 @@
 *-pro/
+tmp
+*.tar
+*.zip
+*.tar.gz
+
+node_modules/
