@@ -6,25 +6,28 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func setupRouter() *gin.Engine {
-	r := gin.Default()
+type Item struct {
+	ID   int    `json:"id"`
+	Name string `json:"name"`
+}
+
+var items = []Item{}
+var nextID = 1
+
+func main() {
+	router := gin.Default()
 
 	// Ping test
-	r.GET("/ping", func(c *gin.Context) {
+	router.GET("/ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
 
-	// Echo the user value
-	r.GET("/user/:name", func(c *gin.Context) {
-		user := c.Params.ByName("name")
-		greetingMsg := "Hello, " + user + "!"
-		c.String(http.StatusOK, greetingMsg)
-	})
+	// CRUD
+	router.GET("/items", getItems)
+	router.POST("/items", createItem)
+	router.GET("/items/:id", getItem)
+	router.PUT("/items/:id", updateItem)
+	router.DELETE("/items/:id", deleteItem)
 
-	return r
-}
-
-func main() {
-	r := setupRouter()
-	r.Run(":8080")
+	router.Run(":8080")
 }
