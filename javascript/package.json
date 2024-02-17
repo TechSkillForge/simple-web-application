@@ -1,15 +1,27 @@
 {
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "name": "javascript",
+  "name": "simple-express-app",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "A simple Express application for demonstration purposes.",
+  "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechSkillForge/simple-web-application.git"
+  },
+  "homepage": "https://github.com/TechSkillForge/simple-web-application/tree/main/javascript",
+  "keywords": [
+    "express",
+    "web",
+    "api"
+  ],
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "GabrielBrotas",
   "license": "ISC",
-  "description": ""
+  "engines": {
+    "node": ">=18.17,1"
+  }
 }
