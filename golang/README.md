@@ -1,6 +1,6 @@
 # Golang
 
-All commands should be executed from the root of the `golang` directory.
+_Note: All commands listed below are executed from this directory._
 
 ## Pre-requisites
 
@@ -21,4 +21,3 @@ go run cmd/http/main.go # run the application
 ```
 
 Navigate to `http://localhost:8080/ping` in your browser to view the application.
-
