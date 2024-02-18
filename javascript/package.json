@@ -2,9 +2,10 @@
   "name": "simple-express-app",
   "version": "1.0.0",
   "description": "A simple Express application for demonstration purposes.",
-  "main": "src/index.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/index.js"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "license": "ISC",
   "engines": {
     "node": ">=18.17,1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
