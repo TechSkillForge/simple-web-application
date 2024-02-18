@@ -22,6 +22,8 @@ go mod tidy # download dependencies
 go run cmd/http/*.go # run the application
 ```
 
+The application will now be accessible at `http://localhost:8080/ping`. See the "How to Test" section below for more information.
+
 ## How to Test
 
 Navigate to `http://localhost:8080/ping` in your browser to view the application and confirm that it is running.
