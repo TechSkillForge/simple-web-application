@@ -17,7 +17,7 @@ Execute the following commands to run the application:
 npm install
 
 # run the application in development mode
-npm rrun dev
+npm run dev
 ```
 
 The application will now be accessible at `http://localhost:8080/ping`. See the "How to Test" section below for more information.
