@@ -77,7 +77,6 @@ $ curl -X PUT http://localhost:8080/items/1 -d '{"name": "item2"}'
 $ curl -X DELETE http://localhost:8080/items/1
 
 {
-    "id": 1,
-    "name": "item2"
+    "message": "item deleted"
 }
 ```
